@@ -140,3 +140,22 @@ You pay based on an Azure App service plan:
 * Shared Tier -- Free, shared(linux not supported)
 * Dedicated Tier -- Basic,Standarde,Premium,PremiumV2,PremiumV3
 * Isolated Tier -- Azure App Service can also run docker single or multiple container.
+
+what is Runtime environment ?
+A runtime Software/Instructions that are executed while yourprogram is running. A runtime generally means what programming language and libraries and framework you are using.
+
+A runtime for Azure App Services will be a pre-defined container that has your programming language and commonly used library for that language installed.
+
+with Azure App services you can choose runtime.
+
+* .Net
+* .Net core
+* Java
+* Ruby
+* Node.js
+* PHP
+* Python
+
+Azure App Services will have generally multiple latest versions of a programming language, eg : Ruby 2.6, 2.7
+
+Its common for a cloud provider to stop supporting older versions so you keep current and forces customer to keep good security practice by having latest patches.
