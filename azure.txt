@@ -159,3 +159,9 @@ with Azure App services you can choose runtime.
 Azure App Services will have generally multiple latest versions of a programming language, eg : Ruby 2.6, 2.7
 
 Its common for a cloud provider to stop supporting older versions so you keep current and forces customer to keep good security practice by having latest patches.
+
+Azure App Service allows you defined custom conatiners for Windows or Linux :
+
+Step1 : create your own docker container on your local environment.
+Step2 : push the docker container to Azure Container Registry.
+Step3 : Deploy your container image to App Service.
