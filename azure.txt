@@ -52,6 +52,8 @@ Automatic Os upgrades :
 
 
 
+
+
 Health Monitoring :
 	Health Monitoring can be enabled to determine if your server is healthy or unhealthy
 
@@ -65,6 +67,9 @@ There are 2 modes of health monitoring:
 
 Automatic repair policy :
 If an instance is found to be unhealthy then delete it and launch a new instance.
+
+
+
 
 
 Azure Virtual Desktop :
@@ -90,6 +95,9 @@ Keep application and user data secure :
 * Easily apply the right access controls to users and devices with Azure Active Directory Conditional Access.
 
 
+
+
+
 Launching an Virtual Machine :
 
 Step 1 : Click on create Virtual Machine
@@ -102,6 +110,8 @@ Step 7 : Select authentication type -- public key or passsword.
 Step 8 : Select inbound ports ssh(22). 
 Step 9 : Select disk.
 Step 10 : after selecting necessary items, click on review and create.
+
+
 
 
 
