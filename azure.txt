@@ -49,3 +49,43 @@ Rolling :
 
 Automatic Os upgrades :
 * Can be enabled helps to ease update management by safely and automatically upgrading the OS disk for all instances.
+
+
+
+Health Monitoring :
+	Health Monitoring can be enabled to determine if your server is healthy or unhealthy
+
+There are 2 modes of health monitoring:
+
+1) Application health extension :
+* ping an HTTP request to a specific path and except a status 200.
+
+2) Load Balancer Probe :
+* Allow you to check based on TCP,UDP or HTTP requests.
+
+Automatic repair policy :
+If an instance is found to be unhealthy then delete it and launch a new instance.
+
+
+Azure Virtual Desktop :
+	Azure Virtual desktop on Microsoft Azure is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, ios, Android, and Linux, with apps that you can use to access remote desktops and apps. You can use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+
+Use Azure Virtual Desktop for specific needs like when security is a concern because all data is saved on the server and cannot be left on the device of a user.
+
+Enable secure and productive remote work on any device :
+* Azure Virtual Desktop provides full windows 10 and windows server desktop and application virtualization on any personal device.
+
+* Seamless integration with Microsoft 365 Apps for enterprise and Microsoft Teams.
+
+Reduce costs of licensing and infrastructure :
+* Use eligible windows or Microsoft 365 licenses to access windows Virtual Desktop and pay only for what you use.
+
+Protect against outages to stay productive :
+* Help keep your team running during outages by leveraging built-in Azure Site Recovery and Azure Backup technologies.
+
+Simplify IT Management :
+* Windows Virtual Desktop manages the virtual desktop infrastructure for you, so you can focus on users, apps, and Os images instead of hardware and maintainence.
+
+Keep application and user data secure :
+* Easily apply the right access controls to users and devices with Azure Active Directory Conditional Access.
+
