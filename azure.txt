@@ -1,0 +1,51 @@
+
+
+Azure Scale Sets :
+	A Scaling Policy determine when a VMs should be added or removed to meet current capacity requirements.
+
+Scale out : 
+	When a instance should be added to the scale set to increase capacity, eg: When CPU Threshold (%) greater than X for Y minutes add X servers.
+
+Scale in :
+	when a instance should be removed to the scale set to decrease capacity, eg : When CPU Threshold (%) less than X for Y minutes add x servers.
+
+
+After you create your Scaleset you have a lot more options available to configure the rules of your Scaling Policy,If you
+want more metrics there are 2 ways to collect more information:
+
+1) App Insights installs a small instrumentation package in your application that monitors the app and sends telemetry to azure.
+
+* when you want application metrics: Page load performance, Session counts
+
+2) Azure Diagonistic extension is an agent that runs inside a VM instance, it monitors and saves performance metrics to Azure Storage so you can collect more detailed information
+
+* When you want more detailed Host-based metrics
+
+Scale-In Policy is how determines what VM is removed(deleted) to decrease decrease the capacity of Scale set
+
+default 
+* Delete the VM with the highest Instance ID
+* Balanced across Availability Zones (AZs) and Fault Domains(ADs)
+
+Newest VM :
+* Delete the newest created VM.
+* Balanced across Availabilty Zones (AZs)
+
+Oldest VM:
+* Delete the oldest VM
+* Balanced across Availability Zone
+
+Update Policy :
+* determine how VM instances are brought up-to-date with the latest scale set model
+
+Automatic :
+* Increasing with start upgrading immediately in random order
+
+Manual :
+* existing instances must be manually upgraded
+
+Rolling :
+* upgrades roll out in batches with optional pause
+
+Automatic Os upgrades :
+* Can be enabled helps to ease update management by safely and automatically upgrading the OS disk for all instances.
