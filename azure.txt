@@ -89,3 +89,44 @@ Simplify IT Management :
 Keep application and user data secure :
 * Easily apply the right access controls to users and devices with Azure Active Directory Conditional Access.
 
+
+Launching an Virtual Machine :
+
+Step 1 : Click on create Virtual Machine
+Step 2 : Create or select the existing resource group.
+Step 3 : Enter VM name.
+Step 4 : Select Region & availabilty zones.
+Step 5 : Select image.
+step 6 : selectl size based on your use.
+Step 7 : Select authentication type -- public key or passsword.
+Step 8 : Select inbound ports ssh(22). 
+Step 9 : Select disk.
+Step 10 : after selecting necessary items, click on review and create.
+
+
+
+Azure App Service : (is an Paas)
+
+Azure App service is an HTTP-based service for hosting web applications, REST APIs, and mobile backends.You can choose your programming language and either a windows and linux environment.It is a platform as a service, so it is the Heroku equivalent for Azure.
+
+Azure App service takes care of the following underlying infrastructure :
+* Security patches for OS and languages.
+* Load balancing
+* Autoscaling
+* Automated manager
+
+Azure App service makes it easy to implement common integrations and features such as:
+* Azure Devops (for deployment) 
+* Github Integration
+* Docker Hub integration
+* Package Management
+* Easy to setup staging environments
+* custom domains
+* attaching TLS/SSL certificates
+
+when you create your app you have to choose a unique name since it becomes a fully quallified domain.
+
+You pay based on an Azure App service plan:
+* Shared Tier -- Free, shared(linux not supported)
+* Dedicated Tier -- Basic,Standarde,Premium,PremiumV2,PremiumV3
+* Isolated Tier -- Azure App Service can also run docker single or multiple container.
