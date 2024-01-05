@@ -165,3 +165,38 @@ Azure App Service allows you defined custom conatiners for Windows or Linux :
 Step1 : create your own docker container on your local environment.
 Step2 : push the docker container to Azure Container Registry.
 Step3 : Deploy your container image to App Service.
+
+Deployment Slots :
+
+Deployment slots allow you to create differnet environments of your web-application associated to a different hostname. This is useful when need a staging, QA environment.
+
+* Think of it as a way quickly clone your production environment for other uses.
+* you can also swap environments. This could be how you perform a Blue/Green deploy.
+* You can promote our staging to production by swapping, if something goes wrong you could swap them back.
+
+App Service Environment :
+
+App Service Environment (ASE) is an Azure App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale.
+
+This allows you to host:
+* Windows web apps 
+* Linux web apps 
+* Docker containers
+* Mobile apps
+* Functions
+
+App Service environments(ASEs) are appropriate for application workloads that require:
+* Very high scale
+* Isolatioon and secure network access
+* High memory utilization
+
+Customers can create multiple ASEs within a single Azure region or accross multiple Azure regions making ASEs ideal for horizontally scaling stateless application tiers in support of high requests per second(RPS) workloads.
+
+* ASE comes with its own pricing tier (Isolated tier)
+* ASEs can be used to configure security architecture
+* Apps running on ASEs can have their access gated by upstream devices, such as web application firewalls(WAFS)
+* Apps service Environments can be deployed into Availability zones (AZ) using zone pinning.
+
+There are 2 deployment types for an App Service environments (ASE):
+1) External ASE
+2) ILB ASE
